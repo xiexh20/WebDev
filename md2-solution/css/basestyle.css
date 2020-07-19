@@ -19,7 +19,7 @@ h1{
 
 /* styled element: div */
 div.styled{
-    background-color: pink;
+    background-color: gray;
     /* width: 100%; */
     height: 100px;
     margin-top: 10px;
@@ -27,6 +27,7 @@ div.styled{
     margin-bottom: 10px;
     padding: 5px;
     border: 5px solid white;
+    position: relative;
 
 }
 
@@ -40,4 +41,43 @@ div.styled{
     background-color: gray;
     color: hotpink;
     text-align: justify;
+}
+
+/* element p */
+p.styled{
+    position: relative;
+    background-color: gray;
+    border: 10px solid white;
+    height: 100px;
+
+}
+
+/* id: potato */
+#potato{
+    background-color: pink;
+    /* float: right;   this will not algined to the top */
+    /* width: 30px;
+    height: 20px; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+}
+
+/* id tomato */
+#tomato{
+    background-color: pink;
+    /* width: 30px;
+    height: 20px; */
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    
+}
+
+#banana{
+    background-color: pink;
+    position: absolute;
+    right: 0px;
+    top: 0px;
 }
