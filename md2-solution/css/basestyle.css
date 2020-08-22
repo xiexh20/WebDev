@@ -1,94 +1,101 @@
 /* base styles */
+
 * {
     box-sizing: border-box;
-
 }
 
-/* style for element: section */
-section{
-    color: blue;
-    width: 30%;
-    height: 100px;
-    background-color: cornsilk;
-}
 
 /* style for header 1 */
-h1{
-    text-align: center; /* use this to set the algnment of text */
+
+h1 {
+    text-align: center;
+    /* use this to set the algnment of text */
 }
 
-/* styled element: div */
-div.styled{
-    background-color: gray;
+
+/* styled element: div, the container for each section */
+
+div.container {
     /* width: 100%; */
     height: 300px;
     margin-top: 10px;
-    /* margin-right: 20px; */
     margin-bottom: 10px;
-    padding: 5px;
-    border: 5px solid white;
+    border: 15px solid white;
     position: relative;
-    overflow: auto;
-
 }
+
 
 /* define a row class */
-.row{
-    width: 100%;  /* a row takes 100% of the space */
+
+.row {
+    width: 100%;
+    /* a row takes 100% of the space in the entire span of the browser*/
+    /* give some space after the row */
+    margin-bottom: 2em;
+    flex-wrap: wrap;
 }
 
-/* class content */
-.content{
-    background-color: gray;
-    color: hotpink;
-    text-align: justify;
-}
 
-/* element p */
-p.styled{
+/* styled element p, whose content is the text */
+
+p.styled {
     position: relative;
-    /* background-color: gray; */
-    /* border: 10px solid white; */
-    /* height: 100px; */
     text-align: justify;
     color: cornsilk;
-
+    font-family: 'Ubuntu', sans-serif;
+    /* give some margine on the left and right, auto margin will center the element */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* id: potato */
-#potato{
-    background-color: yellow;
-    /* float: right;   this will not algined to the top */
-    /* width: 30px;
-    height: 20px; */
-    position: absolute;
-    top: 0px;
-    right: 0px;
 
-}
+/* common styles for the title section */
 
-/* id tomato */
-#tomato{
-    background-color: red;
-    /* width: 30px;
-    height: 20px; */
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    
-}
-
-#banana{
-    background-color: pink;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-}
-
-/* a small sized rectangular, common style for tag p*/
-.srec{
+.sec-title {
     width: 80px;
     height: 20px;
-    
     text-align: center;
+    border: 1px solid black;
+    font-family: 'Do Hyeon', sans-serif;
+    /* place the title on top right, require its container's position set to relative */
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+
+/* special styles for each title section */
+
+
+/* id: potato */
+
+#potato {
+    background-color: yellow;
+}
+
+
+/* id tomato */
+
+#tomato {
+    background-color: red;
+}
+
+
+/* id banana */
+
+#banana {
+    background-color: pink;
+}
+
+
+/* the style for the div containing the title and text */
+
+.sec-text {
+    background-color: grey;
+    border: 1px solid black;
+    position: relative;
+    /* inherit means the height is correspondign to the height of its container */
+    height: inherit;
+    overflow: auto;
 }
