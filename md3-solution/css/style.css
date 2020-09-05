@@ -1,0 +1,38 @@
+/* style for the section*/
+
+.section-container {
+    background-color: #daebad73;
+    height: 1000px;
+    overflow: auto;
+    margin-bottom: 5em;
+}
+
+.section-title {
+    font-size: 20px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.section-text {
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* style for the menu header */
+
+.menu-header {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+
+/* to center the navbar item */
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
