@@ -27,7 +27,12 @@ as described in the requirements and the steps in order to complete this
 assignment.
 WARNING!!! WARNING!!!
 
+
 */
+
+(function(window) {
+
+})();
 
 // STEP 1:
 // Wrap the entire contents of script.js inside of an IIFE
@@ -59,11 +64,11 @@ WARNING!!! WARNING!!!
         // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
         // name in the loop.
         if (firstLetter == 'j') {
-            window.byeSpeaker.speak(names[i]);
+            byeSpeaker.speak(names[i]);
 
             // byeSpeaker.xxxx
         } else {
-            window.helloSpeaker.speak(names[i]);
+            helloSpeaker.speak(names[i]);
         }
     }
 
