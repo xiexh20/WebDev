@@ -83,9 +83,10 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...
         showLoading("#main-content");
         $ajaxUtils.sendGetRequest(
             allCategoriesUrl,
-            function(responds) {
-                buildAndShowHomeHTML(responds); // make sure surround the function with an inline function definition
-            }, // ***** <---- TODO: STEP 1: Substitute [...] ****** with an inline function
+            buildAndShowHomeHTML,
+            // function(responds) {
+            //     buildAndShowHomeHTML(responds); // make sure surround the function with an inline function definition
+            // }, // ***** <---- TODO: STEP 1: Substitute [...] ****** with an inline function
             true); // Explicitely setting the flag to get JSON from server processed into an object literal
     });
     // *** finish **
